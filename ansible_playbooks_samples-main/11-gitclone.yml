@@ -1,9 +1,9 @@
-- hosts: localhost
+- hosts: all
   become: yes
   tasks:
    - name: Install Git
      yum: name=git state=present
    - name: git clone
      git:
-      repo: 'https://github.com/ashokitschool/maven-web-app.git'
+      repo: 'https://github.com/Ekangaki/ansible_playbooks_samples.git'
       dest: /home/ansible/maven-web-app
