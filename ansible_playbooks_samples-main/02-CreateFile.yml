@@ -1,5 +1,6 @@
 #write a playbook to create a file in all host nodes
 - hosts: all
+  become: yes
   tasks:
     - name: Create file in all host nodes
       file: 
